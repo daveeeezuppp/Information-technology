@@ -48,3 +48,12 @@ docker stop nginx-server
 docker ps -a
 docker rm nginx-server
 docker ps -a
+
+
+Skills Learned
+
+I learned how to compare Virtual Machines and containers and understand why containers are useful in cloud-native environments. I also learned how to use Docker commands to pull images, create and run containers, map ports, stop containers, and remove containers. I learned how to verify a web server using the curl command and document technical procedures using Markdown.
+
+Challenges Encountered
+
+One challenge was becoming familiar with the Docker command-line interface and understanding the purpose of each command. Another challenge was understanding how port mapping allows the host machine to communicate with a web server running inside a container. Using commands such as docker ps, docker ps -a, and curl helped me verify that each stage of the deployment was successful.

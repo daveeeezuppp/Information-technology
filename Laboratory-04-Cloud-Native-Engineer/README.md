@@ -27,9 +27,24 @@ This laboratory activity introduces cloud-native engineering and containerizatio
 
 ## Docker Commands Executed
 
-### Checkpoint 3
+Checkpoint 3 — Docker Environment 
 
 ```bash
 docker --version
 docker info
 docker ps
+
+Checkpoint 4 — Nginx Deployment
+
+docker pull nginx
+docker run -d --name nginx-server -p 8080:80 nginx
+docker ps
+curl http://localhost:8080
+
+Checkpoint 5 — Container Lifecycle
+
+docker ps
+docker stop nginx-server
+docker ps -a
+docker rm nginx-server
+docker ps -a
